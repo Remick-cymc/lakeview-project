@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!--  CSS Supporting Files  -->
+     <link href='/static/css/bootstrap.min.css' rel="nofollow">
+     <link rel="stylesheets" href='/static/css/lightslider.css'>
+     <link rel="stylesheets" href='/static/css/style.css'>
+     <link rel="stylesheet" href='/static/css/bootstrap.css'>
+     <!--  JS  Supporting Files    -->
+     <script src="/static/js/bootstrap.bundle.min.js"></script>
+     <script src="/static/js/jquery.js"></script>
+     <script src="/static/js/lightslider.js"></script>
+     <script src="/static/js/script.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg bg-secondary navbar-ligth">
+                    <h2><a href="/" class="navbar-brand title">Lakeview</a></h2>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav">
+                            <a href="/"class="nav-link active">Home</a>
+                            <a href="/Lake" class="nav-link">Lake</a>
+                            <a href="/Ponds" class="nav-link">Ponds</a>
+                            <a href="/Fish" class="nav-link">Fish</a>
+                            <a href="/Hotels" class="nav-link">Hotels</a>
+                        </div>
+                      
+                    </div>
+    
+                </nav>
+    
+            </div>
+    
+        </div>
+        <br><br>
+        <section class="row">
+            <div class="col-md-7 mx-auto">
+                <div class="card shadow p-2 text-center">
+                    <div class="card-body">
+                        <h3 class="text-info">Log In</h3>
+                       
+                        <span style="color: rgb(0, 255, 106);">{{Successful}}</span>
+                        <span style="color: rgb(236, 12, 12);">{{Error}}</span>
+                        <form action="/login" method="post">
+                            <input type="text" name="username" placeholder="Your user name" class="form-control" required><br>
+                            <input type="password" name="password1" placeholder="Your Password" class="form-control" required><br>
+                            <input type="submit" value="Log In" class="btn btn-info">
+                            <br>
+                            <a class="btn btn-primary" type="button" href="/singup">signup</a>
+                        
+                        </form>
+                        
+                           
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <br><br>
+    <section class="row bg-dark p-5">
+        <div class="col-md-4">
+            <h3 class="text-light">About Us</h3>
+            <p class="text-light">We provide Booking spaces for our visitors in Kenya</p>
+            <p class="text-light">we are available every day</p>
+        </div>
+
+        <div class="col-md-4">
+            <h3 class="text-light">Contact Us</h3>
+            <form action="">
+            <input type="number" placeholder="Enter phone number" class="Form-control">
+            <br><br>
+            <input type="email" placeholder="Enter Emai" class="form-control">
+            <br>
+            <textarea name="" id="" cols="30" rows="5" placeholder="Leave a Comment" class="form-control"></textarea>
+            <br>
+            <button type="button" class="btn btn-danger">Send Message</button>
+            </form>
+        </div>
+
+        <div class="col-md-4">
+            <h4 class="text-light">Stay Connected</h4>
+            <a href="https://www.facebook.com/">
+            <img src="/static/images/face.jpeg" alt="facebook" style="height: 50px;">
+            </a>
+            <a href="https://www.instagram.com/">
+            <img src="/static/images/ins.jpeg" alt="instagram" style="height: 50px;">
+            </a>
+            <a href="https://www.twiter.com">
+            <img src="/static/images/x.png" alt="twitter-x-icon" style="height: 50px;">
+            </a>
+            <br><br>
+
+            
+            <p style="color: aqua;">lets us make our lakes clean and beautiful</p>
+            <p  class="text-light">You are all welcome, you can get us on the social media above</p>
+        </div>
+    </section>
+
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgb(211, 99, 39);">
+            created by Remick Tukei © 2020 Copyright:
+            <a class="text-light" href="https://mdbootstrap.com/">LakeView.com</a>
+
+         
+</div>
+  
+</body>
+</html>

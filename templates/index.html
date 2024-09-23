@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakeview</title>
+    <link href='/static/css/bootstrap.min.css' rel="nofollow">
+    <link rel="stylesheets" href='/static/css/lightslider.css'>
+    <link rel="stylesheets" href='/static/css/style.css'>
+    <link rel="stylesheet" href='/static/css/bootstrap.css'>
+    <!--  JS  Supporting Files    -->
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/lightslider.js"></script>
+    <script src="/static/js/script.js"></script>
+    <style>
+        .myClass2{
+            font-size: 50%;
+        }
+        img{
+            transition: 1s;
+        }
+        
+        img:hover{
+            transform: scale(1.2);
+        }
+        .title{
+            font-size: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+    </div>
+    <div class="row" style="padding-right: 5dp;">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg bg-secondary navbar-ligth">
+                <h2><a href="/" class="navbar-brand title">Lakeview</a></h2>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="/"class="nav-link active">Home</a>
+                        <a href="/Lake.html" class="nav-link">Lake</a>
+                        <a href="/Ponds.html" class="nav-link">Ponds</a>
+                        <a href="/Fish.html" class="nav-link">Fish</a>
+                        <a href="/Hotels.html" class="nav-link">Hotels</a>
+                        {% if session['key'] %}
+                        <p>User {{session['key']}} logged in</p>
+                        <a href="/logout" class="nav-item nav-link">Log Out</a>
+                    {% else %}
+                        <a href="/signup" class="nav-item nav-link">sign up</a>
+                        <a href="/login" class="nav-item nav-link">login</a>
+                    {% endif %}
+                   </div>
+                    </div>
+                 
+            
+                </div>
+
+            </nav>
+
+        </div>
+
+    <div class="container-fluid">
+        
+        
+        <br>
+         <!-- carousel div begin -->
+         <div class="row">
+            <div class="col-md-12">
+                <div class="carousel slide" id="myCarousel" data-bs-ride="carousel">
+                    <!-- wrapper for the carousel items -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/static/images/lake01.jpg" alt="My first slide" class="d-block w-100" style="height: 500px">
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <img src="/static/images/lake02.jpg" alt="MY third slide" class="d-block w-100" style="height: 500px">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/static/images/lake03.jpg" alt="MY third slide" class="d-block w-100" style="height: 500px">
+                        </div>
+                    </div>
+                    <!-- carousel controls -->
+                    <a href="#myCarousel" class="carousel-control-prev" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#myCarousel" class="carousel-control-next" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                        
+                </div>
+                
+            </div>
+    
+        </div>
+        <br>
+            <!-- first section starts -->
+            <br>
+            <h4 style="text-align: center;">Lakes</h4>
+            
+            <section class="container-fluid">
+               <!-- first section starts -->
+                <section class="row text-center">
+                  
+                    <div class="col-md-4">
+                        <div class="card shadow">
+                            <img src="/static/images/lake01.jpg" alt="" style="height: 200px;">
+                            <div class="card-body">
+                                <h4 class="#myClass2">L.Naivasha</h4> 
+                                <p>Lake Naivasha is not only a picturesque destination but also an important ecological and economic resource for Kenya. Sustainable management and conservation efforts are crucial for preserving its biodiversity and ensuring its continued benefits for local communities and visitors alike.</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="/static/images/lake02.jpg" alt="Iphone 15" style="height: 200px;">
+                            <div class="card-body">
+                                <h4 class="#myClass2">L.Victoria</h4> 
+                                <p>Lake Victoria is one of Africa's Great Lakes and is the largest tropical lake in the world by surface area. Here's an overview of Lake Victoria:</p>
+                                
+                            </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="/static/images/lake03.jpg" alt="camera" style="height: 200px;">
+                        <div class="card-body">
+                            <h4 class="#myClass2">L.Turkana</h4> 
+                            <p>Lake Turkana, also known as the Jade Sea, is a remarkable body of water located in the Kenyan Rift Valley, in the northern part of Kenya, near the borders with Ethiopia. Here are some key points about Lake Turkana: </p>
+                         
+                        </div>
+                    </div>  
+                </div>
+            </section>
+            <br>
+            <h4></h4>
+             <section class="row text-center">
+                <h4 style="text-align: center;">Pond</h4>
+                    <div class="col-md-4">
+                        <div class="card shadow">
+                            <img src="/static/images/pond1.jpeg" alt="Redmi" style="height: 200px;">
+                            <div class="card-body">
+                                <h4 class="#myClass2">Drigoh</h4> 
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque modi, sapiente deserunt repellat vel vero veritatis nam nostrum molestiae quod? Voluptas porro rerum fugit minus maiores libero aperiam ex tempora?</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="/static/images/pond2.jpeg" alt="Iphone 15" style="height: 200px;">
+                            <div class="card-body">
+                                <h4 class="#myClass2">Eliye Springs</h4> 
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quo quae et quas. Illo autem possimus, reiciendis eligendi laboriosam eius? Sequi qui numquam error, consequatur autem rem iure reiciendis dolores.</p>
+                                
+                            </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="/static/images/pond3.jpeg" alt="camera" style="height: 200px;">
+                        <div class="card-body">
+                            <h4 class="#myClass2">Simbi</h4> 
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsum consectetur repellendus voluptatem consequuntur aspernatur molestias explicabo doloribus at impedit? Vitae dolor enim provident, omnis dicta exercitationem reprehenderit laudantium unde!</p>
+                         
+                        </div>
+                    </div>  
+                </div>
+            </section>
+            <br>
+            <section class="row text-center">
+                <h4 style="text-align: center;">Fish</h4>
+                    <div class="col-md-4">
+                        <div class="card shadow">
+                            <img src="/static/images/fish1.jpeg" alt="Redmi" style="height: 200px;">
+                            <div class="card-body">
+                                <h4 class="#myClass2">Tilapia</h4> 
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque modi, sapiente deserunt repellat vel vero veritatis nam nostrum molestiae quod? Voluptas porro rerum fugit minus maiores libero aperiam ex tempora?</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="/static/images/fish2.jpeg" alt="Iphone 15" style="height: 200px;">
+                            <div class="card-body">
+                                <h4 class="#myClass2">Nile Pearch</h4> 
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quo quae et quas. Illo autem possimus, reiciendis eligendi laboriosam eius? Sequi qui numquam error, consequatur autem rem iure reiciendis dolores.</p>
+                                
+                            </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="/static/images/fish3.jpeg" alt="camera" style="height: 200px;">
+                        <div class="card-body">
+                            <h4 class="#myClass2">GoldFish</h4> 
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsum consectetur repellendus voluptatem consequuntur aspernatur molestias explicabo doloribus at impedit? Vitae dolor enim provident, omnis dicta exercitationem reprehenderit laudantium unde!</p>
+                         
+                        </div>
+                    </div>  
+                </div>
+            </section>
+
+            <br>
+            <section class="row text-center">
+                <h4 style="text-align: center;">Hotels</h4>
+                    <div class="col-md-4">
+                        <div class="card shadow">
+                            <img src="/static/images/hotel01.jpg" alt="Redmi" style="height: 200px;">
+                            <div class="card-body">
+                                <h4 class="#myClass2">Rehanatu</h4> 
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque modi, sapiente deserunt repellat vel vero veritatis nam nostrum molestiae quod? Voluptas porro rerum fugit minus maiores libero aperiam ex tempora?</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="/static/images/hotel1.jpeg" alt="Iphone 15" style="height: 200px;">
+                            <div class="card-body">
+                                <h4 class="#myClass2">Migis Louge</h4> 
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quo quae et quas. Illo autem possimus, reiciendis eligendi laboriosam eius? Sequi qui numquam error, consequatur autem rem iure reiciendis dolores.</p>
+                                
+                            </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="/static/images/hotel2.jpeg" alt="camera" style="height: 200px;">
+                        <div class="card-body">
+                            <h4 class="#myClass2">Saranac</h4> 
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsum consectetur repellendus voluptatem consequuntur aspernatur molestias explicabo doloribus at impedit? Vitae dolor enim provident, omnis dicta exercitationem reprehenderit laudantium unde!</p>
+                         
+                        </div>
+                    </div>  
+                </div>
+            </section>
+            <br>
+        </div>
+        
+            <!-- accordion ends -->
+        <!-- the last section -->
+        
+        <section class="row bg-dark p-5">
+            <div class="col-md-4">
+                <h3 class="text-light">About Us</h3>
+                <p class="text-light">We provide Booking spaces for our visitors in Kenya</p>
+                <p class="text-light">we are available every day</p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="text-light">Contact Us</h3>
+                <form action="">
+                <input type="number" placeholder="Enter phone number" class="Form-control">
+                <br><br>
+                <input type="email" placeholder="Enter Emai" class="form-control">
+                <br>
+                <textarea name="" id="" cols="30" rows="5" placeholder="Leave a Comment" class="form-control"></textarea>
+                <br>
+                <button type="button" class="btn btn-danger">Send Message</button>
+                </form>
+            </div>
+
+            <div class="col-md-4">
+                <h4 class="text-light">Stay Connected</h4>
+                <a href="https://www.facebook.com/">
+                <img src="/static/images/face.jpeg" alt="facebook" style="height: 50px;">
+                </a>
+                <a href="https://www.instagram.com/">
+                <img src="/static/images/ins.jpeg" alt="instagram" style="height: 50px;">
+                </a>
+                <a href="https://www.twiter.com">
+                <img src="/static/images/x.png" alt="twitter-x-icon" style="height: 50px;">
+                </a>
+                <br><br>
+
+                
+                <p style="color: aqua;">lets us make our lakes clean and beautiful</p>
+                <p  class="text-light">You are all welcome, you can get us on the social media above</p>
+            </div>
+        </section>
+
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgb(211, 99, 39);">
+                created by Remick Tukei © 2020 Copyright:
+                <a class="text-light" href="https://mdbootstrap.com/">LakeView.com</a>
+
+              
+            </div>
+            
+            <!-- Copyright -->
+        
+        
+    </div>
+   
+    
+
+</body>
+</html>
